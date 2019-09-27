@@ -1,3 +1,72 @@
+## Development Plan
+
+- √ [CFT Mock](./CFT_Mock.pdf)
+- Review [CFPB Design Guidlines](https://cfpb.github.io/design-manual/)
+- Breakdown Layout
+
+## Layout
+
+- LandingPage
+  - Nav bar
+    - Logo
+    - Nav links / hamburger
+  - Hero: Launch Tool
+  - Main: More Digital Money Tools
+    - ul ToolCards
+      - li ToolCard
+- ToolCard
+  - img:image
+  - h3:title
+  - p:description
+  - btn:action
+- Incomes/Expenses
+  - DMTNav
+  - FormProgress
+  - FormHero
+    - h1:title
+    - p:description
+  - CFInputForm
+    - TimeframeSelect
+    - InputTable
+      - InputRow
+        - input:amount
+        - selectoption:type | selectoption:category
+        - btn:delete
+      - AddRow
+        - btn:plus
+    - FormNav
+- FormNav
+  - btn:Back
+  - btn:Next
+- Summary
+  - DMTNav
+  - FormProgress
+  - FormHero
+  - SummaryTable type='incomes'
+    - h2:title
+    - table:props.type
+      - tr(s)
+        - td:category | td:type
+        - td:amount
+      - tr
+        td:separator
+      - tr
+        - td:Total
+        - td:Total Amount
+  - SummaryTable type='expenses'
+  - NetCashFlow
+    - h2:Net Weekly Cash Flow
+    - div
+      - img:+
+      - span:total
+  - FormNav
+- Recommendations
+  - DMTNav
+  - FormProgress
+  - FormHero
+  - DebtSteps
+  - InvestmentSteps
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
