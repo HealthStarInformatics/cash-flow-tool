@@ -1,19 +1,14 @@
 import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CashFlowTool from "./components/CashFlowTool";
-import DMTNav from "./components/DMTNav";
+import SiteNav from "./components/SiteNav";
 import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <Router>
-      <DMTNav />
+      <SiteNav />
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/tool/:section" component={CashFlowTool} />

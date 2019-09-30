@@ -1,0 +1,49 @@
+#siteNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20aa3f;
+  color: #ffffff;
+
+  ul {
+    list-style: none;
+  }
+
+  .left,
+  .right {
+    padding: 10px;
+    display: flex;
+  }
+
+  .left {
+    margin-left: 15px;
+    .logo {
+      align-self: flex-end;
+      margin-right: 10px;
+    }
+  }
+
+  .right {
+    display: flex;
+    margin-right: 15px;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: #ffce8d;
+      text-decoration: underline;
+    }
+  }
+}
