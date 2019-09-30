@@ -3,6 +3,7 @@ import Incomes from "./Incomes";
 import Expenses from "./Expenses";
 import Summary from "./Summary";
 import Recommendations from "./Recommendations";
+import CFTNav from "./CFTNav";
 
 const renderSection = match => {
   switch (match.params.section) {
@@ -20,10 +21,11 @@ const renderSection = match => {
 };
 
 const CashFlowTool = ({ match }) => (
-  <>
-    <h1>CashFlowTool</h1>
+  <main id="cash-flow-tool">
+    <h1>Cash Flow Tool</h1>
+    <CFTNav />
     {renderSection(match)}
-  </>
+  </main>
 );
 
 export default CashFlowTool;
