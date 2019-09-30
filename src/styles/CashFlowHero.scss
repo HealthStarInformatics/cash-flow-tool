@@ -1,0 +1,46 @@
+.cash-flow-hero {
+  background: #1e9642;
+  color: #ffffff;
+  text-align: center;
+  margin: 5px;
+  padding: 1rem 3rem;
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .title {
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+
+  .tagline {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .launch-tool {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    background: #1e9642;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #ffffff;
+      color: #20aa3f;
+
+      // text-decoration: underline;
+    }
+  }
+}

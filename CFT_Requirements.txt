@@ -1,0 +1,17 @@
+Task Area 3: Cash Flow Tool
+
+The purpose of this tool is to track the timing of income and expenses on a weekly basis to ensure one has enough to make it from week-to-week. 
+The Bureau will focus on consumers who have a difficult time making ends meet on a weekly basis.
+
+Functional requirements for tools include, but are not limited to:
+    1. User will enter various inputs including:
+        a. Daily and/or weekly income amounts
+            i. Income amounts detailed by type (salary, hourly, gig jobs, etc.)
+        b. Daily and/or weekly expenses
+            i. Expenses broken down by type (housing, transportation, utilities, debt oblications, groceries, etc)
+    2. User will see various outputs including:
+        a. Summary of money coming in and going out by category type.
+        b. Recommended steps to prevent going into the red and how to move items around.
+        c. Ability to text or email user the summary of information.
+    3. User will be able to store the data locally in their browser.
+    4. The option to drag and drop different inputs/outputs.

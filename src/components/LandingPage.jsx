@@ -1,10 +1,11 @@
 import React from "react";
+import CashFlowHero from "./CashFlowHero";
 
 const LandingPage = props => (
-  <>
-    <h1>LandingPage</h1>
+  <section id="landing">
+    <CashFlowHero />
     {console.log(props.match)}
-  </>
+  </section>
 );
 
 export default LandingPage;

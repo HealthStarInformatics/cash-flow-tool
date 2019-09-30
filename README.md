@@ -8,9 +8,10 @@
 
 - LandingPage
   - Nav bar
-    - Logo
-    - Nav links / hamburger
-  - Hero: Launch Tool
+    - √ Logo
+    - Nav links
+      - hamburger
+  - √ Hero: Launch Tool
   - Main: More Digital Money Tools
     - ul ToolCards
       - li ToolCard
