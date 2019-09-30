@@ -1,0 +1,98 @@
+#cash-flow-tool {
+  text-align: center;
+
+  .cft-title {
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    background: #66c368;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      border-bottom: 1px solid #ffffff;
+      padding-bottom: 3px;
+      &:hover,
+      &:focus {
+        color: #66c368;
+        border-color: #66c368;
+      }
+    }
+  }
+
+  .tool-section {
+    padding: 0 3rem;
+
+    .tool-section-title {
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .input-form {
+    a {
+      text-decoration: none;
+    }
+
+    .period-select {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 20px;
+
+      label {
+        margin-right: 15px;
+      }
+    }
+
+    .input-list {
+      margin-bottom: 15px;
+    }
+
+    .input-item {
+      input,
+      select {
+        width: 40%;
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      select {
+        width: 30%;
+        margin-right: 15px;
+      }
+    }
+
+    .add-income {
+      font-size: 2rem;
+      line-height: 2rem;
+      padding-top: 4px;
+      padding-right: 2px;
+      border: 2px solid #5f5f5f;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: #66c368;
+        border-color: #66c368;
+      }
+    }
+
+    button {
+      margin: 20px auto;
+      display: block;
+      width: 80%;
+    }
+  }
+}

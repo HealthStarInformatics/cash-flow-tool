@@ -5,6 +5,8 @@ import Summary from "./Summary";
 import Recommendations from "./Recommendations";
 import CFTNav from "./CFTNav";
 
+import "../styles/CashFlowTool.scss";
+
 const renderSection = match => {
   switch (match.params.section) {
     case "incomes":
@@ -22,7 +24,7 @@ const renderSection = match => {
 
 const CashFlowTool = ({ match }) => (
   <main id="cash-flow-tool">
-    <h1>Cash Flow Tool</h1>
+    <h1 className="cft-title">Cash Flow Tool</h1>
     <CFTNav />
     {renderSection(match)}
   </main>
