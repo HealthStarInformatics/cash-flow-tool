@@ -24,21 +24,14 @@
   }
 
   .launch-tool {
-    font-size: 1.5rem;
-    margin: 0 auto;
-    padding: 1rem 3rem;
-    background: #1e9642;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: 2px solid #ffffff;
-    text-decoration: none;
-    cursor: pointer;
+    background: #ffffff;
+    color: #20aa3f;
+    border-color: #ffffff;
 
     &:hover,
     &:focus {
-      background: #ffffff;
-      color: #20aa3f;
+      background: #1e9642;
+      color: #ffffff;
     }
   }
 }

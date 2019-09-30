@@ -9,17 +9,14 @@
 - LandingPage
   - Nav bar
     - √ Logo
-    - Nav links
-      - hamburger
-  - √ Hero: Launch Tool
-  - Main: More Digital Money Tools
-    - ul ToolCards
-      - li ToolCard
-- ToolCard
-  - img:image
-  - h3:title
-  - p:description
-  - btn:action
+    - √ Nav links
+    - hamburger
+  - √ Launch Tool
+  - √ More Digital Money Tools
+    - √ ToolCards
+      - √ ToolCard
+- √ ToolCard
+
 - Incomes/Expenses
   - DMTNav
   - FormProgress

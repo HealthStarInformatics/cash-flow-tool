@@ -1,0 +1,37 @@
+#more-tools {
+  text-align: center;
+  padding: 1rem 3rem;
+
+  .title {
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+}
+
+.tool-card {
+  padding: 1rem;
+  margin-top: 20px;
+  border: 2px solid black;
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .card-title {
+    margin: 0.75rem;
+    margin-top: 0;
+    font-size: 1.75rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.tool-card-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
