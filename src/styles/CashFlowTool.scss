@@ -8,23 +8,31 @@
     background: #66c368;
   }
 
-  ul {
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
-    list-style: none;
-    margin: 0;
-    padding: 20px 0;
+  #cft-nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      text-transform: uppercase;
+      list-style: none;
+      margin: 0;
+      padding: 20px 0;
 
-    a {
-      text-decoration: none;
-      color: #000000;
-      border-bottom: 1px solid #ffffff;
-      padding-bottom: 3px;
-      &:hover,
-      &:focus {
+      a {
+        text-decoration: none;
+        color: #000000;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 3px;
+        &:hover,
+        &:focus {
+          color: #66c368;
+          border-color: #66c368;
+        }
+      }
+
+      li.active a {
         color: #66c368;
         border-color: #66c368;
+        font-weight: bold;
       }
     }
   }

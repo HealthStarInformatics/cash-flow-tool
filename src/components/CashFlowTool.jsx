@@ -25,7 +25,7 @@ const renderSection = match => {
 const CashFlowTool = ({ match }) => (
   <main id="cash-flow-tool">
     <h1 className="cft-title">Cash Flow Tool</h1>
-    <CFTNav />
+    <CFTNav activeSection={match.params.section} />
     {renderSection(match)}
   </main>
 );

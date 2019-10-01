@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import FormNav from "./FormNav";
 import { SummaryTable, totalAmount, formatCurrency } from "./SummaryTable";
 
@@ -50,4 +49,5 @@ const Summary = props => (
     <FormNav back="/tool/expenses" next="/tool/recommendations" />
   </div>
 );
+
 export default Summary;
