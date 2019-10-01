@@ -5,10 +5,9 @@ export const totalAmount = data =>
   data.reduce((prev, curr) => prev + curr.amount, 0);
 
 export const formatCurrency = (num, withSign = true) => {
-  const fixed = num.toFixed(2);
-  const sign = fixed < 0 ? "- " : "";
-  if (withSign) return `${sign}$${Math.abs(fixed)}`;
-  return `$${Math.abs(fixed)}`;
+  const sign = num < 0 ? "- " : "";
+  if (withSign) return `${sign}$${Math.abs(num).toFixed(2)}`;
+  return `$${Math.abs(num).toFixed(2)}`;
 };
 
 export const SummaryTable = ({ type, period, data }) => {
