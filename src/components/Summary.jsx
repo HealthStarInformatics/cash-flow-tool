@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FormNav from "./FormNav";
 import { SummaryTable, totalAmount, formatCurrency } from "./SummaryTable";
 
 const expenseData = [
@@ -46,18 +47,7 @@ const Summary = props => (
     <SummaryTable type="Income" period="Weekly" data={incomeData} />
     <SummaryTable type="Expenses" period="Weekly" data={expenseData} />
     <NetCashFlow income={incomeData} expenses={expenseData} period="Weekly" />
-    <div className="form-nav">
-      <Link to="/tool/expenses">
-        <button className="launch-tool" type="submit">
-          &lt; Back
-        </button>
-      </Link>
-      <Link to="/tool/recommendations">
-        <button className="launch-tool" type="submit">
-          Next &gt;
-        </button>
-      </Link>
-    </div>
+    <FormNav back="/tool/expenses" next="/tool/recommendations" />
   </div>
 );
 export default Summary;

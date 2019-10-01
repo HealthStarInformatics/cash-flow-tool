@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import FormNav from "./FormNav";
 
 const handleSubmit = e => {
   e.preventDefault();
@@ -38,18 +38,7 @@ const Expenses = props => (
       <span className="add-expense" role="img" aria-label="plus">
         ➕
       </span>
-      <div className="form-nav">
-        <Link to="/tool/incomes">
-          <button className="launch-tool" type="submit">
-            &lt; Back
-          </button>
-        </Link>
-        <Link to="/tool/summary">
-          <button className="launch-tool" type="submit">
-            Next &gt;
-          </button>
-        </Link>
-      </div>
+      <FormNav back="/tool/incomes" next="/tool/summary" />
     </form>
   </div>
 );
