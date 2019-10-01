@@ -1,6 +1,11 @@
+## Resources
+
+[CFT Mock](./CFT_Mock.pdf)  
+[CFT Initial Requirements](./CFT_Requirements.txt)  
+[Your Money, Your Goals toolkit](https://www.consumerfinance.gov/practitioner-resources/your-money-your-goals/toolkit/)
+
 ## Development Plan
 
-- √ [CFT Mock](./CFT_Mock.pdf)
 - Review [CFPB Design Guidlines](https://cfpb.github.io/design-manual/)
 - Breakdown Layout
 
@@ -18,29 +23,25 @@
 - √ ToolCard
 
 - Incomes/Expenses
-  - DMTNav
+  - √ DMTNav
   - FormProgress
-  - FormHero
-    - h1:title
-    - p:description
-  - CFInputForm
-    - TimeframeSelect
-    - InputTable
-      - InputRow
+  - √ FormHero
+  - √ CFInputForm
+    - √ TimeframeSelect
+    - √ InputTable
+      - √ InputRow
         - input:amount
         - selectoption:type | selectoption:category
         - btn:delete
-      - AddRow
+      - √ AddRow
         - btn:plus
-    - FormNav
-- FormNav
-  - btn:Back
-  - btn:Next
+    - √ FormNav
+- √ FormNav
 - Summary
-  - DMTNav
+  - √ DMTNav
   - FormProgress
-  - FormHero
-  - SummaryTable type='incomes'
+  - √ FormHero
+  - √ SummaryTable type='incomes'
     - h2:title
     - table:props.type
       - tr(s)
@@ -51,13 +52,13 @@
       - tr
         - td:Total
         - td:Total Amount
-  - SummaryTable type='expenses'
-  - NetCashFlow
+  - √ SummaryTable type='expenses'
+  - √ NetCashFlow
     - h2:Net Weekly Cash Flow
     - div
       - img:+
       - span:total
-  - FormNav
+  - √ FormNav
 - Recommendations
   - DMTNav
   - FormProgress
