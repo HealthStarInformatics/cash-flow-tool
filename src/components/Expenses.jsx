@@ -7,7 +7,7 @@ const handleSubmit = e => {
 
 const Expenses = props => (
   <div className="tool-section expenses">
-    <h1 className="tool-section-title">Where's it going?</h1>
+    <h2 className="tool-section-title">Where's it going?</h2>
     <p className="tool-section-description">
       Use the form below to enter your daily or weekly expenses, along with
       their category, to help build an overview of your financial obligations.

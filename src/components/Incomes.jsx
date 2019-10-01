@@ -7,7 +7,7 @@ const handleSubmit = e => {
 
 const Incomes = props => (
   <div className="tool-section incomes">
-    <h1 className="tool-section-title">What's coming in?</h1>
+    <h2 className="tool-section-title">What's coming in?</h2>
     <p className="tool-section-description">
       Use the form below to enter your daily or weekly incomes, along with their
       type, to help build an overview of the funds you have available
@@ -37,11 +37,13 @@ const Incomes = props => (
       <span className="add-income" role="img" aria-label="plus">
         ➕
       </span>
-      <Link to="/tool/expenses">
-        <button className="launch-tool" type="submit">
-          Next
-        </button>
-      </Link>
+      <div className="form-nav">
+        <Link to="/tool/expenses">
+          <button className="launch-tool" type="submit">
+            Next
+          </button>
+        </Link>
+      </div>
     </form>
   </div>
 );

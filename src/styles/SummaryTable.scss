@@ -1,0 +1,41 @@
+.summary-table {
+  .data-row,
+  .total-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .row-label,
+  .row-amount,
+  .table-sum {
+    width: 50%;
+    text-align: left;
+  }
+
+  .row-amount,
+  .table-sum {
+    text-align: right;
+  }
+
+  .total-row {
+    border-top: 2px solid #000000;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+
+    .row-label,
+    .table-sum {
+      font-weight: bold;
+    }
+
+    &.income .table-sum {
+      color: #1e9642;
+    }
+
+    &.expenses .table-sum {
+      color: #b63014;
+    }
+  }
+}

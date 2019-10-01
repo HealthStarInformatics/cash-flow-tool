@@ -39,10 +39,6 @@
   }
 
   .input-form {
-    a {
-      text-decoration: none;
-    }
-
     .period-select {
       display: flex;
       justify-content: center;
@@ -89,16 +85,42 @@
         border-color: #66c368;
       }
     }
+  }
 
+  .form-nav {
+    display: flex;
+    justify-content: space-around;
     button {
-      margin: 20px auto;
       display: block;
+      margin: 20px auto;
       text-align: center;
     }
+  }
 
-    .form-nav {
-      display: flex;
-      justify-content: space-around;
+  .net-cash-flow {
+    margin-top: 2.5rem;
+
+    .title {
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    .value {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+
+      .icon {
+        margin-right: 10px;
+        font-size: 2rem;
+      }
+
+      &.negative {
+        color: #b63014;
+      }
+
+      &.positive {
+        color: #66c368;
+      }
     }
   }
 }
