@@ -63,6 +63,8 @@
     }
 
     .input-item {
+      margin-top: 5px;
+
       input,
       select {
         width: 40%;
@@ -76,8 +78,7 @@
       }
     }
 
-    .add-income,
-    .add-expense {
+    .add-row {
       font-size: 2rem;
       line-height: 2rem;
       padding-top: 4px;
@@ -92,6 +93,10 @@
         color: #66c368;
         border-color: #66c368;
       }
+    }
+
+    .delete-row {
+      cursor: pointer;
     }
   }
 

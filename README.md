@@ -2,12 +2,20 @@
 
 [CFT Mock](./CFT_Mock.pdf)  
 [CFT Initial Requirements](./CFT_Requirements.txt)  
+[CFPB Design Guidlines](https://cfpb.github.io/design-manual/)
 [Your Money, Your Goals toolkit](https://www.consumerfinance.gov/practitioner-resources/your-money-your-goals/toolkit/)
 
 ## Development Plan
 
-- Review [CFPB Design Guidlines](https://cfpb.github.io/design-manual/)
-- Breakdown Layout
+- √ Breakdown Layout
+- √ Implement static layout
+- Make input forms dynamic
+  - Income
+  - Expenses
+- Make output forms dynamic
+  - Summary
+  - Recommendations
+- Utilize browser storage
 
 ## Layout
 
@@ -24,7 +32,7 @@
 
 - Incomes/Expenses
   - √ DMTNav
-  - FormProgress
+  - √ FormProgress
   - √ FormHero
   - √ CFInputForm
     - √ TimeframeSelect
@@ -39,7 +47,7 @@
 - √ FormNav
 - Summary
   - √ DMTNav
-  - FormProgress
+  - √ FormProgress
   - √ FormHero
   - √ SummaryTable type='incomes'
     - h2:title
@@ -59,12 +67,12 @@
       - img:+
       - span:total
   - √ FormNav
-- Recommendations
-  - DMTNav
-  - FormProgress
-  - FormHero
-  - DebtSteps
-  - InvestmentSteps
+- √ Recommendations
+  - √ DMTNav
+  - √ FormProgress
+  - √ FormHero
+  - √ DebtSteps
+  - √ InvestmentSteps
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
