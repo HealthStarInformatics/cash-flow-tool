@@ -9,11 +9,11 @@ import "../styles/CashFlowTool.scss";
 
 export const CashFlowContext = new React.createContext();
 
-const exampleExpenses = [
-  { id: 123456789, amount: 344, category: "transportation" },
-  { id: 987654321, amount: 123.21, category: "groceries" },
-  { id: 887273717, amount: 44.22, category: "loan" }
-];
+const exampleExpenses = {
+  "123456789": { id: 123456789, amount: 344, category: "transportation" },
+  "987654321": { id: 987654321, amount: 123.21, category: "groceries" },
+  "887273717": { id: 887273717, amount: 44.22, category: "loan" }
+};
 
 const exampleIncomes = {
   "123456789": { id: 123456789, amount: 344, category: "salary" },

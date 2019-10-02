@@ -2,16 +2,16 @@
 
 [CFT Mock](./CFT_Mock.pdf)  
 [CFT Initial Requirements](./CFT_Requirements.txt)  
-[CFPB Design Guidlines](https://cfpb.github.io/design-manual/)
+[CFPB Design Guidlines](https://cfpb.github.io/design-manual/)  
 [Your Money, Your Goals toolkit](https://www.consumerfinance.gov/practitioner-resources/your-money-your-goals/toolkit/)
 
 ## Development Plan
 
-- √ Breakdown Layout
-- √ Implement static layout
+- ~~Breakdown Layout~~
+- ~~Implement static layout~~
 - Make input forms dynamic
-  - √ Income
-  - Expenses
+  - ~~Income~~
+  - ~~Expenses~~
 - Make output forms dynamic
   - Summary
   - Recommendations
@@ -21,54 +21,40 @@
 
 - LandingPage
   - Nav bar
-    - √ Logo
-    - √ Nav links
+    - ~~Logo~~
+    - ~~Nav links~~
     - hamburger
-  - √ Launch Tool
-  - √ More Digital Money Tools
-    - √ ToolCards
-      - √ ToolCard
-- √ ToolCard
+  - ~~Launch Tool~~
+  - ~~More Digital Money Tools~~
+    - ~~ToolCards~~
+      - ~~ToolCard~~
+- ~~ToolCard~~
 
-- Incomes/Expenses
-  - √ DMTNav
-  - √ FormProgress
-  - √ FormHero
-  - √ CFInputForm
-    - √ TimeframeSelect
-    - √ InputTable
-      - √ InputRow
-      - √ AddRow
-    - √ FormNav
-- √ FormNav
-- Summary
-  - √ DMTNav
-  - √ FormProgress
-  - √ FormHero
-  - √ SummaryTable type='incomes'
-    - h2:title
-    - table:props.type
-      - tr(s)
-        - td:category | td:type
-        - td:amount
-      - tr
-        td:separator
-      - tr
-        - td:Total
-        - td:Total Amount
-  - √ SummaryTable type='expenses'
-  - √ NetCashFlow
-    - h2:Net Weekly Cash Flow
-    - div
-      - img:+
-      - span:total
-  - √ FormNav
-- √ Recommendations
-  - √ DMTNav
-  - √ FormProgress
-  - √ FormHero
-  - √ DebtSteps
-  - √ InvestmentSteps
+- ~~Incomes/Expenses~~
+  - ~~DMTNav~~
+  - ~~FormProgress~~
+  - ~~FormHero~~
+  - ~~CFInputForm~~
+    - ~~TimeframeSelect~~
+    - ~~InputTable~~
+      - ~~InputRow~~
+      - ~~AddRow~~
+    - ~~FormNav~~
+- ~~FormNav~~
+- ~~Summary~~
+  - ~~DMTNav~~
+  - ~~FormProgress~~
+  - ~~FormHero~~
+  - ~~SummaryTable type='incomes'~~
+  - ~~SummaryTable type='expenses'~~
+  - ~~NetCashFlow~~
+  - ~~FormNav~~
+- ~~Recommendations~~
+  - ~~DMTNav~~
+  - ~~FormProgress~~
+  - ~~FormHero~~
+  - ~~DebtSteps~~
+  - ~~InvestmentSteps~~
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -8,3 +8,10 @@ export const incomeOptions = [
   { value: "hourly", label: "Hourly" },
   { value: "one-time", label: "One-time" }
 ];
+
+export const expenseOptions = [
+  { value: "housing", label: "Housing" },
+  { value: "transportation", label: "Transportation" },
+  { value: "groceries", label: "Groceries" },
+  { value: "loan-payment", label: "Loan Payment" }
+];
