@@ -10,7 +10,7 @@
 - √ Breakdown Layout
 - √ Implement static layout
 - Make input forms dynamic
-  - Income
+  - √ Income
   - Expenses
 - Make output forms dynamic
   - Summary
@@ -38,11 +38,7 @@
     - √ TimeframeSelect
     - √ InputTable
       - √ InputRow
-        - input:amount
-        - selectoption:type | selectoption:category
-        - btn:delete
       - √ AddRow
-        - btn:plus
     - √ FormNav
 - √ FormNav
 - Summary
