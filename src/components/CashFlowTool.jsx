@@ -1,9 +1,11 @@
 import React from "react";
+import { isEqual } from "lodash";
 import Incomes from "./Incomes";
 import Expenses from "./Expenses";
 import Summary from "./Summary";
 import Recommendations from "./Recommendations";
 import CFTNav from "./CFTNav";
+import { getFromStorage, saveToStorage } from "../services/storageServices";
 
 import "../styles/CashFlowTool.scss";
 
@@ -29,6 +31,29 @@ class CashFlowTool extends React.Component {
     expenses: exampleExpenses,
     period: "weekly"
   };
+
+  componentDidMount() {
+    const incomes = getFromStorage("cft-incomes");
+    if (incomes) this.setState({ incomes });
+
+    const expenses = getFromStorage("cft-expenses");
+    if (expenses) this.setState({ expenses });
+
+    const period = getFromStorage("cft-period");
+    if (period) this.setState({ period });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    let stateKey;
+
+    ["cft-incomes", "cft-expenses", "cft-period"].forEach(key => {
+      stateKey = key.split("-")[1];
+
+      if (!isEqual(prevState[stateKey], this.state[stateKey])) {
+        saveToStorage(key, this.state[stateKey]);
+      }
+    });
+  }
 
   activeComponent = section => {
     switch (section) {

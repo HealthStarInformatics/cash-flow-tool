@@ -10,3 +10,5 @@ export const inputConfig = {
     options: expenseOptions
   }
 };
+
+export const defaultCategory = type => inputConfig[type].options[0].value;

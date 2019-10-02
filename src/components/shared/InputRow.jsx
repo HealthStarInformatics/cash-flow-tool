@@ -24,9 +24,9 @@ const deleteRow = (e, type, update) => {
   if (window.confirm("Delete this item?")) {
     e.persist();
     update(state => {
-      const dataCopy = state[type];
+      const dataCopy = { ...state[type] };
       delete dataCopy[e.target.parentElement.id];
-      return { [type]: { ...dataCopy } };
+      return { [type]: dataCopy };
     });
   }
 };

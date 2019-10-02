@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { CashFlowContext } from "../CashFlowTool";
 import { InputRow } from "./InputRow";
+import { defaultCategory } from "../../configuration/config";
 
-const newInputObject = id => ({ id, amount: "", category: "" });
+const newInputObject = (id, category) => ({ id, category, amount: "" });
 
 const InputList = ({ type }) => {
   const state = useContext(CashFlowContext);
@@ -14,7 +15,7 @@ const InputList = ({ type }) => {
       return {
         [type]: {
           ...state[type],
-          [newId]: newInputObject(newId)
+          [newId]: newInputObject(newId, defaultCategory(type))
         }
       };
     });

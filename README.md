@@ -15,7 +15,7 @@
 - Make output screens dynamic
   - ~~Summary~~
   - Recommendations: Require input on how these will be generated
-- Utilize browser storage
+- ~~Utilize browser storage~~
 
 ## Layout
 
