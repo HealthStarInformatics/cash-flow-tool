@@ -1,53 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import FormNav from "./FormNav";
-import { SummaryTable, totalAmount, formatCurrency } from "./SummaryTable";
+import { SummaryTable } from "./SummaryTable";
+import { CashFlowContext } from "./CashFlowTool";
+import { NetCashFlow } from "./NetCashFlow";
+import { totalByCategory } from "../services/currencyServices";
 
-const expenseData = [
-  { id: 1, type: "Transportation", amount: 75.0 },
-  { id: 2, type: "Groceries", amount: 150.0 },
-  { id: 3, type: "Loans", amount: 3500.26 }
-];
-
-const incomeData = [
-  { id: 1, type: "Hourly", amount: 300.0 },
-  { id: 2, type: "One-Time", amount: 150.0 },
-  { id: 3, type: "One-Time", amount: 450.0 }
-];
-
-const valueClass = total => {
-  if (total === 0) return { class: "", icon: "" };
-  if (total < 0) return { class: " negative", icon: "-" };
-  return { class: " positive", icon: "+" };
-};
-
-const NetCashFlow = props => {
-  const total = totalAmount(props.income) - totalAmount(props.expenses);
-  const valClass = valueClass(total);
+const Summary = () => {
+  const { incomes, expenses, period } = useContext(CashFlowContext);
 
   return (
-    <div className="net-cash-flow">
-      <h3 className="title">Net {props.period} Cash Flow</h3>
-      <p className={"value" + valClass.class}>
-        <span role="img" aria-label={valClass.class} className="icon">
-          {valClass.icon}
-        </span>
-        {formatCurrency(total, false)}
+    <div className="tool-section summary">
+      <h2 className="tool-section-title">Let's Review</h2>
+      <p className="tool-section-description">
+        Here's an overview of your incomes and expenditures.
       </p>
+      <SummaryTable
+        type="incomes"
+        period={period}
+        data={totalByCategory(incomes)}
+      />
+      <SummaryTable
+        type="expenses"
+        period={period}
+        data={totalByCategory(expenses)}
+      />
+      <NetCashFlow incomes={incomes} expenses={expenses} period={period} />
+      <FormNav back="/tool/expenses" next="/tool/recommendations" />
     </div>
   );
 };
-
-const Summary = props => (
-  <div className="tool-section summary">
-    <h2 className="tool-section-title">Let's Review</h2>
-    <p className="tool-section-description">
-      Here's an overview of your incomes and expenditures.
-    </p>
-    <SummaryTable type="Income" period="Weekly" data={incomeData} />
-    <SummaryTable type="Expenses" period="Weekly" data={expenseData} />
-    <NetCashFlow income={incomeData} expenses={expenseData} period="Weekly" />
-    <FormNav back="/tool/expenses" next="/tool/recommendations" />
-  </div>
-);
 
 export default Summary;

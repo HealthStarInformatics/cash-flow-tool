@@ -9,12 +9,12 @@
 
 - ~~Breakdown Layout~~
 - ~~Implement static layout~~
-- Make input forms dynamic
+- ~~Make input forms dynamic~~
   - ~~Income~~
   - ~~Expenses~~
-- Make output forms dynamic
-  - Summary
-  - Recommendations
+- Make output screens dynamic
+  - ~~Summary~~
+  - Recommendations: Require input on how these will be generated
 - Utilize browser storage
 
 ## Layout

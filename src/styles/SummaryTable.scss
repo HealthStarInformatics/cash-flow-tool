@@ -1,4 +1,6 @@
 .summary-table {
+  text-transform: capitalize;
+
   .data-row,
   .total-row {
     display: flex;
@@ -6,6 +8,10 @@
     align-items: center;
     width: 70%;
     margin: 0 auto;
+  }
+
+  .data-row {
+    margin-top: 10px;
   }
 
   .row-label,
@@ -30,7 +36,7 @@
       font-weight: bold;
     }
 
-    &.income .table-sum {
+    &.incomes .table-sum {
       color: #1e9642;
     }
 
