@@ -1,35 +1,17 @@
 #siteNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: #20aa3f;
   color: #ffffff;
+  padding: 20px 0 20px 20px;
+
+  .logo {
+    margin-right: 10px;
+  }
 
   ul {
     list-style: none;
-  }
-
-  .left,
-  .right {
-    padding: 10px;
-    display: flex;
-  }
-
-  .left {
-    margin-left: 15px;
-    .logo {
-      align-self: flex-end;
-      margin-right: 10px;
-    }
-  }
-
-  .right {
-    display: flex;
-    margin-right: 15px;
-
-    li {
-      margin: 0 10px;
-    }
   }
 
   .title {
@@ -40,10 +22,13 @@
     text-decoration: none;
     color: #ffffff;
 
-    &:hover,
-    &:focus {
-      color: #ffce8d;
-      text-decoration: underline;
-    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  #siteNav{
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
   }
 }

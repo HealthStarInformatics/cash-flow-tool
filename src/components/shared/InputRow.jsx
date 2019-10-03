@@ -37,7 +37,7 @@ export const InputRow = ({ type, item, update }) => {
   return (
     <div className="input-item" id={item.id}>
       <input
-        type="text"
+        type="number"
         name="amount"
         className={type}
         placeholder={config.placeholder}
