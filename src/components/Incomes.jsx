@@ -15,6 +15,7 @@ const Incomes = () => (
       id="incomes-form"
       onSubmit={e => e.preventDefault()}
       className="input-form"
+      autocomplete="off"
     >
       <PeriodSelect />
       <InputList type="incomes" />

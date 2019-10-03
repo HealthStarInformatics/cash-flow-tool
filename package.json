@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proto": "surge ./build 'https://cftproto.surge.sh'" 
+    "proto": "yarn build && cp build/index.html build/200.html && surge ./build 'https://cftproto.surge.sh'"
   },
   "eslintConfig": {
     "extends": "react-app"
