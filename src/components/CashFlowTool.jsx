@@ -12,17 +12,17 @@ import "../styles/CashFlowTool.scss";
 export const CashFlowContext = new React.createContext();
 
 const exampleExpenses = {
-  "123456789": { id: 123456789, amount: 123, category: "transportation" },
-  "987654321": { id: 987654321, amount: 321, category: "groceries" },
-  "987654322": { id: 987654322, amount: 112, category: "groceries" },
+  "123456789": { id: 123456789, amount: 123.21, category: "transportation" },
+  "987654321": { id: 987654321, amount: 321.31, category: "groceries" },
+  "987654322": { id: 987654322, amount: 112.41, category: "groceries" },
   "887273717": { id: 887273717, amount: 44.22, category: "loan" }
 };
 
 const exampleIncomes = {
-  "123456789": { id: 123456789, amount: 111, category: "salary" },
+  "123456789": { id: 123456789, amount: 111.11, category: "salary" },
   "987654321": { id: 987654321, amount: 222.21, category: "one-time" },
-  "987654322": { id: 987654322, amount: 12, category: "one-time" },
-  "887273717": { id: 887273717, amount: 44.22, category: "hourly" }
+  "987654322": { id: 987654322, amount: 12.34, category: "one-time" },
+  "887273717": { id: 887273717, amount: 44.02, category: "hourly" }
 };
 
 class CashFlowTool extends React.Component {

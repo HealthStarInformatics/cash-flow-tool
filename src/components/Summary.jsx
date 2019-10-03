@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import FormNav from "./FormNav";
+import FormNav from "./shared/FormNav";
 import { SummaryTable } from "./SummaryTable";
 import { CashFlowContext } from "./CashFlowTool";
 import { NetCashFlow } from "./NetCashFlow";

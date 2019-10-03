@@ -1,5 +1,5 @@
 import React from "react";
-import FormNav from "./FormNav";
+import FormNav from "./shared/FormNav";
 
 const Recommendations = props => (
   <div className="tool-section summary">

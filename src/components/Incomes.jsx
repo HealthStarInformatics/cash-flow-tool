@@ -1,5 +1,5 @@
 import React from "react";
-import FormNav from "./FormNav";
+import FormNav from "./shared/FormNav";
 import { PeriodSelect } from "./shared/PeriodSelect";
 import InputList from "./shared/InputList";
 
