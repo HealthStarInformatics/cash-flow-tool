@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "cash-flow-tool.fullname" . }}
+  labels:
+    app: {{ include "cash-flow-tool.name" . }}
+    chart: {{ include "cash-flow-tool.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ include "cash-flow-tool.name" . }}
+    release: {{ .Release.Name }}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels: 
+    service: {{ include "cash-flow-tool.fullname" . }}-ambassador
+  name: {{ include "cash-flow-tool.fullname" . }}-ambassador
+  annotations:
+    getambassador.io/config: |
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: cash_flow_tool_mapping
+      ambassador_id: ambassador-default-1
+      prefix: /cft/
+      rewrite: /cft/
+      service: {{ include "cash-flow-tool.fullname" . }}:{{ .Values.service.port }}
+      timeout_ms: 300000
+spec:
+  clusterIP: None  
+  ports:
+    - port: {{ .Values.service.port }}

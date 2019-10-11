@@ -15,7 +15,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proto": "yarn build && cp build/index.html build/200.html && surge ./build 'https://cftproto.surge.sh'"
+    "proto": "yarn build && cp build/index.html build/200.html && surge ./build 'https://cftproto.surge.sh'",
+    "docker-build": "docker build --rm -t=${DOCKER_HUB_USER}/cash-flow-tool .",
+    "docker-run": "docker run -p 5000:8080 ${DOCKER_HUB_USER}/cash-flow-tool",
+    "docker": "yarn run docker-build && yarn run docker-run"
   },
   "eslintConfig": {
     "extends": "react-app"
